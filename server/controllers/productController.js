@@ -1,6 +1,7 @@
-// server/controllers/productController.js - storefront and vendor catalogue
+﻿// server/controllers/productController.js - storefront and vendor catalogue
 const Product = require('../models/Product');
 const Vendor = require('../models/Vendor');
+const Category = require('../models/Category');
 
 // GET /api/products?search=&category=&page=1&limit=12 (public)
 const listProducts = async (req, res, next) => {
@@ -123,3 +124,4 @@ module.exports = {
   deleteProduct,
   currentVendor
 };
+
