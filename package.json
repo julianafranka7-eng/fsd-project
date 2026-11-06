@@ -1,21 +1,23 @@
-{
-  "name": "multivendor-ecommerce-project",
-  "version": "1.0.0",
-  "description": "Multi-Vendor E-Commerce Platform with Analytics (FSD React Client + Express Backend)",
-  "private": true,
-  "scripts": {
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "dev:all": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "dev:client": "npm --prefix ecommerce-platform run dev",
-    "dev:server": "npm --prefix server run dev",
-    "client:dev": "npm --prefix ecommerce-platform run dev",
-    "server:dev": "npm --prefix server run dev",
-    "client:build": "npm --prefix ecommerce-platform run build",
-    "server:start": "npm --prefix server start",
-    "seed": "npm --prefix server run seed",
-    "install:all": "npm install && npm --prefix server install && npm --prefix ecommerce-platform install"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.2"
-  }
+﻿{
+    "name":  "multivendor-ecommerce-project",
+    "version":  "1.0.0",
+    "description":  "Multi-Vendor E-Commerce Platform with Analytics (FSD React Client + Express Backend)",
+    "private":  true,
+    "scripts":  {
+                    "dev":  "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+                    "dev:all":  "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+                    "dev:client":  "npm --prefix ecommerce-platform run dev",
+                    "dev:server":  "npm --prefix server run dev",
+                    "client:dev":  "npm --prefix ecommerce-platform run dev",
+                    "server:dev":  "npm --prefix server run dev",
+                    "client:build":  "npm --prefix ecommerce-platform run build",
+                    "server:start":  "npm --prefix server start",
+                    "seed":  "npm --prefix server run seed",
+                    "install:all":  "npm install \u0026\u0026 npm --prefix server install \u0026\u0026 npm --prefix ecommerce-platform install",
+                    "start":  "node server.js"
+                },
+    "devDependencies":  {
+                            "concurrently":  "^9.1.2"
+                        },
+    "main":  "server.js"
 }
